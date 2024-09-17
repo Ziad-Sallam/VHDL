@@ -1,0 +1,70 @@
+Component half_adder_tb()
+{
+    SIGNAL finished : STD_LOGIC:= '0';
+    CONSTANT period_time : TIME := 83333 ps;
+
+    Process Sim_finished()
+    {
+        wait for 100000 us;
+        finished <= '1';
+        wait;
+    }
+
+    NewComponent half_adder
+    (
+        a => a,
+        b => b,
+        s => s,
+        c => c,
+    );
+
+    SIGNAL a : STD_LOGIC ;
+    SIGNAL b : STD_LOGIC ;
+    SIGNAL s : STD_LOGIC ;
+    SIGNAL c : STD_LOGIC ;
+
+
+    Process Sim_a()
+    {
+        While(finished /= '1')
+        {
+            a <= '1';
+            wait for 10 ms;
+            a <= '0';
+            wait for 10 ms;
+            wait;
+        }
+        wait;
+    }
+
+    Process Sim_b()
+    {
+        While(finished /= '1')
+        {
+            b <= '1';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            b <= '1';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            b <= '1';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            b <= '1';
+            wait for 10 ms;
+            b <= '1';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            b <= '0';
+            wait for 10 ms;
+            wait;
+        }
+        wait;
+    }
+}

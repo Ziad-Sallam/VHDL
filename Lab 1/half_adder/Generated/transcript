@@ -1,0 +1,76 @@
+# vsim work.RibbleAdder_tb 
+# Start time: 12:10:51 on Mar 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ribbleadder_tb(behavioral)
+# Loading work.ribbleadder(ribbleadderarch)
+# Loading work.full_adder(rtl)
+# Loading work.half_adder(rtl)
+vsim work.ribbleadder_tb
+# End time: 12:12:16 on Mar 02,2024, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# vsim work.ribbleadder_tb 
+# Start time: 12:12:16 on Mar 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ribbleadder_tb(behavioral)
+# Loading work.ribbleadder(ribbleadderarch)
+# Loading work.full_adder(rtl)
+# Loading work.half_adder(rtl)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/ribbleadder_tb/finished \
+sim:/ribbleadder_tb/A0 \
+sim:/ribbleadder_tb/A1 \
+sim:/ribbleadder_tb/A2 \
+sim:/ribbleadder_tb/A3 \
+sim:/ribbleadder_tb/B0 \
+sim:/ribbleadder_tb/B1 \
+sim:/ribbleadder_tb/B2 \
+sim:/ribbleadder_tb/B3 \
+sim:/ribbleadder_tb/cntrl \
+sim:/ribbleadder_tb/c0 \
+sim:/ribbleadder_tb/c1 \
+sim:/ribbleadder_tb/c2 \
+sim:/ribbleadder_tb/c3 \
+sim:/ribbleadder_tb/carry \
+sim:/ribbleadder_tb/period_time
+vsim work.ribbleadder_tb
+# End time: 12:12:35 on Mar 02,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim work.ribbleadder_tb 
+# Start time: 12:12:35 on Mar 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ribbleadder_tb(behavioral)
+# Loading work.ribbleadder(ribbleadderarch)
+# Loading work.full_adder(rtl)
+# Loading work.half_adder(rtl)
+add wave -position insertpoint  \
+sim:/ribbleadder_tb/finished \
+sim:/ribbleadder_tb/A0 \
+sim:/ribbleadder_tb/A1 \
+sim:/ribbleadder_tb/A2 \
+sim:/ribbleadder_tb/A3 \
+sim:/ribbleadder_tb/B0 \
+sim:/ribbleadder_tb/B1 \
+sim:/ribbleadder_tb/B2 \
+sim:/ribbleadder_tb/B3 \
+sim:/ribbleadder_tb/cntrl \
+sim:/ribbleadder_tb/c0 \
+sim:/ribbleadder_tb/c1 \
+sim:/ribbleadder_tb/c2 \
+sim:/ribbleadder_tb/c3 \
+sim:/ribbleadder_tb/carry
+run
+run
+run
+# End time: 12:13:11 on Mar 02,2024, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0

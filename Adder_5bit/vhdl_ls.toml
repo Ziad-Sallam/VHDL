@@ -1,0 +1,16 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'Adder_5bit.vhd',
+	'Adder_5bit_tb.vhd',
+	'FA.vhd',
+	'HA.vhd'
+]
+[libraries.work]
+files = [
+	'Adder_5bit.vhd',
+	'Adder_5bit_tb.vhd',
+	'FA.vhd',
+	'HA.vhd'
+]
+# auto-generated-end

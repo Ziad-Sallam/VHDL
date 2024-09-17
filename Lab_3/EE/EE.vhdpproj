@@ -1,0 +1,10 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="EE.vhd" />
+    <File Include="EE_Sim.ghdp" />
+    <File Include="t_flip_flop.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>EE.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

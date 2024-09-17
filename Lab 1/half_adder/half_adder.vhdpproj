@@ -1,0 +1,13 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="4_bit_ripple_adder_subtactor.vhd" />
+    <File Include="4_bit_ripple_adder_subtactor_Sim.ghdp" />
+    <File Include="full_adder.vhd" />
+    <File Include="full_adder_Sim.ghdp" />
+    <File Include="half_adder.vhd" />
+    <File Include="half_adder_Sim.ghdp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>4_bit_ripple_adder_subtactor.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

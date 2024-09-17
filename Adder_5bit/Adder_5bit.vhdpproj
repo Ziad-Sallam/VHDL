@@ -1,0 +1,12 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="Adder_5bit.vhd" />
+    <File Include="Adder_5bit_Sim.ghdp" />
+    <File Include="Adder_5bit_tb.vhd" />
+    <File Include="FA.vhd" />
+    <File Include="HA.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>Adder_5bit.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

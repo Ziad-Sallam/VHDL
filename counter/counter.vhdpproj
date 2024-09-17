@@ -1,0 +1,9 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="counter.vhd" />
+    <File Include="t_flip_flop.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>counter.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

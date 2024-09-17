@@ -1,0 +1,13 @@
+v 4
+file / "D:\CSED\term_2\logic_2\LogicTeam\counter\counter.vhd" "ff2055260339f88af0023e12119427bef28a7e9f" "20240417172958.555":
+  entity counter at 1( 0) + 0 on 17;
+  architecture rtl of counter at 14( 229) + 0 on 18;
+file / "D:\CSED\term_2\logic_2\LogicTeam\counter\Generated\t_flip_flop_Sim.vhd" "e3657fa1264c3e1f2adf666b74fce1ecc12c1333" "20240417133822.257":
+  entity t_flip_flop_tb at 2( 3) + 0 on 11;
+  architecture behavioral of t_flip_flop_tb at 10( 121) + 0 on 12;
+file / "D:\CSED\term_2\logic_2\LogicTeam\counter\t_flip_flop.vhd" "f8283274042439fb1cb848736294ba2d7186cf0d" "20240417173122.550":
+  entity t_flip_flop at 1( 0) + 0 on 4;
+  architecture behavioral of t_flip_flop at 12( 194) + 0 on 4;
+file / "D:\CSED\term_2\logic_2\LogicTeam\counter\Generated\counter_Sim.vhd" "3ea02b1040a1c10f2814f6145245e485b4679567" "20240417172958.555":
+  entity counter_tb at 2( 3) + 0 on 13;
+  architecture behavioral of counter_tb at 10( 113) + 0 on 14;

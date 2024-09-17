@@ -1,0 +1,14 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'4_bit_ripple_adder_subtactor.vhd',
+	'full_adder.vhd',
+	'half_adder.vhd'
+]
+[libraries.work]
+files = [
+	'4_bit_ripple_adder_subtactor.vhd',
+	'full_adder.vhd',
+	'half_adder.vhd'
+]
+# auto-generated-end

@@ -1,0 +1,10 @@
+v 4
+file / "C:\COLLEGE\Logic2\LogicTeam\Lab_3\EE\EE.vhd" "408809cc16b8b8935a57c66275d770837ca78e22" "20240429175858.933":
+  entity ee at 1( 0) + 0 on 15;
+  architecture rtl of ee at 13( 208) + 0 on 16;
+file / "C:\COLLEGE\Logic2\LogicTeam\Lab_3\EE\t_flip_flop.vhd" "3387147d27ab32de2a94dd5148544a6ae9b0292d" "20240429175858.933":
+  entity t_flip_flop at 1( 0) + 0 on 13;
+  architecture behavioral of t_flip_flop at 12( 211) + 0 on 14;
+file / "C:\COLLEGE\Logic2\LogicTeam\Lab_3\EE\Generated\EE_Sim.vhd" "1b4a160bcb0d0206e4aab85af55c952cb0301b3e" "20240429175858.933":
+  entity ee_tb at 2( 3) + 0 on 11;
+  architecture behavioral of ee_tb at 10( 103) + 0 on 12;

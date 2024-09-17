@@ -1,0 +1,135 @@
+Component Adder_5bit_tb()
+{
+    SIGNAL finished : STD_LOGIC:= '0';
+    CONSTANT period_time : TIME := 83333 ps;
+
+    Process Sim_finished()
+    {
+        wait for 1000 ms;
+        finished <= '1';
+        wait;
+    }
+
+    NewComponent Adder_5bit
+    (
+        X => X,
+        Y => Y,
+        Sum => Sum,
+    );
+
+    SIGNAL X : std_logic_vector (4 downto 0);
+    SIGNAL Y : std_logic_vector (4 downto 0);
+    SIGNAL Sum : std_logic_vector (5 downto 0);
+
+
+    Process Sim_X()
+    {
+        While(finished /= '1')
+        {
+            X <= "00000";
+            wait for 10 ms;
+            X <= "00010";
+            wait for 10 ms;
+            X <= "00011";
+            wait for 10 ms;
+            X <= "01011";
+            wait for 10 ms;
+            X <= "01010";
+            wait for 10 ms;
+            X <= "01110";
+            wait for 10 ms;
+            X <= "11111";
+            wait for 10 ms;
+            X <= "11110";
+            wait for 10 ms;
+            X <= "01010";
+            wait for 10 ms;
+            X <= "10101";
+            wait for 10 ms;
+            X <= "11000";
+            wait for 10 ms;
+            X <= "01110";
+            wait for 10 ms;
+            X <= "10001";
+            wait for 10 ms;
+            X <= "10011";
+            wait for 10 ms;
+            X <= "00000";
+            wait for 10 ms;
+            X <= "00010";
+            wait for 10 ms;
+            X <= "00011";
+            wait for 10 ms;
+            X <= "00010";
+            wait for 10 ms;
+            X <= "00011";
+            wait for 10 ms;
+            X <= "01011";
+            wait for 10 ms;
+            X <= "01010";
+            wait for 10 ms;
+            X <= "01110";
+            wait for 10 ms;
+            X <= "11111";
+            wait for 10 ms;
+            X <= "11110";
+            wait for 10 ms;
+            X <= "01010";
+            wait for 10 ms;
+            X <= "10101";
+            wait for 10 ms;
+            X <= "11000";
+            wait for 10 ms;
+            X <= "01110";
+            wait for 10 ms;
+            X <= "10001";
+            wait for 10 ms;
+            X <= "10011";
+            wait for 10 ms;
+            X <= "00000";
+            wait for 10 ms;
+            X <= "00010";
+            wait for 10 ms;
+            X <= "00011";
+            wait for 10 ms;
+            
+        }
+        wait;
+    }
+
+    Process Sim_Y()
+    {
+        While(finished /= '1')
+        {
+            Y <= "01010";
+            wait for 10 ms;
+            Y <= "00000";
+            wait for 10 ms;
+            Y <= "01100";
+            wait for 10 ms;
+            Y <= "01010";
+            wait for 10 ms;
+            Y <= "00100";
+            wait for 10 ms;
+            Y <= "00001";
+            wait for 10 ms;
+            Y <= "00010";
+            wait for 10 ms;
+            Y <= "01010";
+            wait for 10 ms;
+            Y <= "00000";
+            wait for 10 ms;
+            Y <= "01100";
+            wait for 10 ms;
+            Y <= "01010";
+            wait for 10 ms;
+            Y <= "00100";
+            wait for 10 ms;
+            Y <= "00001";
+            wait for 10 ms;
+            Y <= "00010";
+            wait for 10 ms;
+        }
+        wait;
+    }
+}

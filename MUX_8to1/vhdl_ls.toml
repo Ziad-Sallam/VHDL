@@ -1,0 +1,12 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'MUX_8to1.vhd',
+	'MUX_8to1_tb.vhd'
+]
+[libraries.work]
+files = [
+	'MUX_8to1.vhd',
+	'MUX_8to1_tb.vhd'
+]
+# auto-generated-end

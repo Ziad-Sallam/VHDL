@@ -1,0 +1,12 @@
+# auto-generated
+[Libraries]
+work.files = [
+	'counter.vhd',
+	't_flip_flop.vhd'
+]
+[libraries.work]
+files = [
+	'counter.vhd',
+	't_flip_flop.vhd'
+]
+# auto-generated-end

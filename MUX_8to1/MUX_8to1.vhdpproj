@@ -1,0 +1,10 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="MUX_8to1.vhd" />
+    <File Include="MUX_8to1_Sim.ghdp" />
+    <File Include="MUX_8to1_tb.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <HardwareStartPath>MUX_8to1.vhd</HardwareStartPath>
+  </PropertyGroup>
+</Project>

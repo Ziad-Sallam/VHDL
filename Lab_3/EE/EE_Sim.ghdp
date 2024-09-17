@@ -1,0 +1,52 @@
+Component EE_tb()
+{
+    SIGNAL finished : STD_LOGIC:= '0';
+    CONSTANT period_time : TIME := 83333 ps;
+
+    Process Sim_finished()
+    {
+        wait for 100000 us;
+        finished <= '1';
+        wait;
+    }
+
+    NewComponent EE
+    (
+        CLK => CLK,
+        X => X,
+        Z => Z,
+    );
+
+    SIGNAL CLK : std_logic ;
+    SIGNAL X : std_logic ;
+    SIGNAL Z : std_logic ;
+
+
+    Process Sim_CLK()
+    {
+        While(finished /= '1')
+        {
+            CLK <= '0';
+            wait for 10 ms;
+            CLK <= '1';
+            wait for 10 ms;
+            
+        }
+        wait;
+    }
+
+    Process Sim_X()
+    {
+        While(finished /= '1')
+        {
+            X <= '0';
+            wait for 20 ms;
+            X <= '1';
+            wait for 5 ms;
+            X <= '1';
+            wait for 7 ms;
+            
+        }
+        wait;
+    }
+}
